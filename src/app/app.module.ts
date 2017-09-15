@@ -1,3 +1,4 @@
+import { HeroDetailComponent } from './heros/hero-detail.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -7,25 +8,28 @@ import { AppComponent } from './app.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HeroesModule } from './heroes.module';
+// import { HeroDetailComponent }
 
-const appRoutes: Routes = [
-{ path: 'crisis-center', component: CrisisListComponent },
-// { path: 'hero/:id',      component: HeroDetailComponent },
-{
-path: 'heroes',
-component: HeroListComponent,
-data: { title: 'Heroes List' }
-},
+// const appRoutes: Routes = [
+// { path: 'crisis-center', component: CrisisListComponent },
+// // { path: 'hero/:id',      component: HeroDetailComponent },
+// {
+// path: 'heroes',
+// component: HeroListComponent,
+// data: { title: 'Heroes List' }
+// },
 // { path: '',
 // redirectTo: '/heroes',
 // pathMatch: 'full'
 // },
-{ path: '**', component: PageNotFoundComponent }
-];
+// { path: '**', component: PageNotFoundComponent }
+// ];
 @NgModule({
   declarations: [
     AppComponent,
-    HeroListComponent,
+    // HeroListComponent,
     PageNotFoundComponent,
     CrisisListComponent
   ],
@@ -33,10 +37,8 @@ data: { title: 'Heroes List' }
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+    AppRoutingModule,
+    HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
