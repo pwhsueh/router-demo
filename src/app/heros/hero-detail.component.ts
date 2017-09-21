@@ -17,6 +17,7 @@ export class HeroDetailComponent {
   @HostBinding('@routeAnimation') routeAnimation = true;
   @HostBinding('style.display') display = 'block';
   @HostBinding('style.position') position = 'absolute';
+
   hero: Hero;
   constructor(
     private route: ActivatedRoute,

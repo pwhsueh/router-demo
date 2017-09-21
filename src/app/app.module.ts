@@ -7,12 +7,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
+// import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 // import { HeroDetailComponent }
-
+import { ComposeMessageComponent } from './compose-message.component';
 // const appRoutes: Routes = [
 // { path: 'crisis-center', component: CrisisListComponent },
 // // { path: 'hero/:id',      component: HeroDetailComponent },
@@ -32,7 +33,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     // HeroListComponent,
     PageNotFoundComponent,
-    CrisisListComponent
+    ComposeMessageComponent
+    // CrisisListComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -40,6 +42,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     HttpModule,
     HeroesModule,
+    CrisisCenterModule,
     AppRoutingModule
   ],
   providers: [],
