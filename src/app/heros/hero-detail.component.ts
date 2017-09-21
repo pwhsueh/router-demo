@@ -1,13 +1,13 @@
 import 'rxjs/add/operator/switchMap';
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-// import { slideInDownAnimation } from '../animations';
+import { slideInDownAnimation } from '../animations';
 import { Hero, HeroService } from './hero.service';
 
 @Component({
   selector: 'hero-detail',
   templateUrl: './hero-detail.component.html',
-  // animations: [slideInDownAnimation]
+  animations: [slideInDownAnimation]
 })
 export class HeroDetailComponent {
   // heroForm = new FormGroup({

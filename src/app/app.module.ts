@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CrisisListComponent } from './crisis-list/crisis-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { HeroDetailComponent }
 
 // const appRoutes: Routes = [
@@ -34,6 +35,7 @@ import { HeroesModule } from './heroes.module';
     CrisisListComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpModule,
