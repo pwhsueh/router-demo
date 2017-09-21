@@ -39,7 +39,6 @@ import { HeroesModule } from './heroes.module';
     HttpModule,
     HeroesModule,
     AppRoutingModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
